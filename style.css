@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom left, #931a28 0%, #b85a64 100%);
+  padding: 0 24px;
+  border-bottom: #c5b2ad solid 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat Brush";
+  font-size: 24px;
+  color: #30241c;
+}
+
+.nav-list-ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-list-ul a {
+  font-size: 16px;
+  color: #ddc8c2;
+  transition: #7b6f6c 0.3s;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 24px;
+  background: linear-gradient(to right, #931a28 0%, #b85a64 100%);
+  border-bottom: #c5b2ad solid 2px;
+}
+
+.hero-img {
+  border-radius: 80px;
+  box-shadow: 0 8px 124px rgba(0, 0, 0, 0, 0.1);
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "over the rainbow";
+  color: #f1d3d6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  color: #d47a84;
+  font-size: 18px;
+  font-family: "Roboto";
+  padding: 18px 0;
+}
+
+.signup {
+  display: inline-block;
+  background: linear-gradient(to bottom left, #4a0d14 0%, #25070a 100%);
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 12px 12px;
+  border: #4a0d14 solid 1px;
+}
+
+/* Pictures section */
+
+.pictures-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #eabcc2 0%, #f8e9eb 100%);
+  border-bottom: #faebe8 solid 2px;
+}
+
+.pictures-title {
+  font-family: "Caveat Brush";
+  font-size: 36px;
+  color: #2a1412;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.pic {
+  border-radius: 40px;
+  border: #d47a84 solid 1px;
+  display: block;
+  /* width: 20%; */
+  width: 100%;
+  max-width: 180px;
+
+  margin: 0 auto;
+}
+
+/* Quote section */
+.quote-section {
+  /* background-color: #cd6470; */
+  background: linear-gradient(to bottom right, #eabcc2, #5c1119);
+  padding: 48px 16px;
+  text-align: center;
+}
+
+blockquote {
+  font-family: "Roboto", serif;
+  font-size: 32px;
+  color: #5c2b2e;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+  font-family: "Caveat Brush";
+  color: #18120e;
+  text-align: right;
+}
+
+/* Signup section */
+
+.signup-section {
+  background: linear-gradient(to right, #f7eaea, #f0dada);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 60px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto";
+}
+
+.signup-section h2 {
+  font-size: 28px;
+  font-family: "Caveat Brush";
+  color: #931a28;
+  margin-bottom: 12px;
+}
+
+.signup-section p {
+  font-size: 16px;
+  color: #5c2b2e;
+  margin-bottom: 24px;
+}
+
+.signup-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.signup-section input[type="email"] {
+  padding: 12px 16px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.signup-section input[type="email"]:focus {
+  border-color: #931a28;
+  box-shadow: 0 0 6px rgba(147, 26, 40, 0.4);
+}
+
+.signup-section button {
+  padding: 12px 24px;
+  background-color: #931a28;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-section button:hover {
+  background-color: #b33645;
+}
+
+/* footer section */
+.site-footer {
+  background-color: #931a28;
+  color: #f8e9eb;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  border-top: 2px solid #c5b2ad;
+}
